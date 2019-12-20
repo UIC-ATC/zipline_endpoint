@@ -1,0 +1,10 @@
+version: "2.1"
+
+services:
+  backtesting:
+    build:
+      context: ./backtesting
+      args:
+        QUANDL_API_KEY: $QUANDL_API_KEY
+    ports:
+      - 3000:3000
